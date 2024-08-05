@@ -69,6 +69,19 @@ Tab:AddSlider({
 	end    
 })
 
+Tab:AddSlider({
+	Name = "Custom JumpPower",
+	Min = 16,
+	Max = 500,
+	Default = 20,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 10,
+	ValueName = "JumpPower",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end    
+})
+
 Tab:AddButton({
 	Name = "Destroy Gui",
 	Callback = function()
