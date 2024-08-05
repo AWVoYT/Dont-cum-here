@@ -2,6 +2,13 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "Universal Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "Universal Hub", IntroText = "Universal Hub made by AWVo"})
  
+ OrionLib:MakeNotification({
+	Name = "Can't find the game youre looking?",
+	Content = "Join my discord if you want any game to be added! https://discord.com/invite/DmNburuv2J",
+	Image = "rbxassetid://4483345998",
+	Time = 30
+})
+ 
  local Tab = Window:MakeTab({
 	Name = "Universal",
 	Icon = "rbxassetid://4483345998",
