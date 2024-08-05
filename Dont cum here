@@ -1,0 +1,98 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Universal Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "Universal Hub", IntroText = "Universal Hub made by AWVo"})
+
+local Tab = Window:MakeTab({
+	Name = "Config",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Set Speed to 100",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Set Jump power to 100",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+  	end    
+})
+
+Tab:AddSlider({
+	Name = "Custom Walkspeed",
+	Min = 16,
+	Max = 500,
+	Default = 20,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 10,
+	ValueName = "Walkspeed",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
+
+Tab:AddButton({
+	Name = "Destroy Gui",
+	Callback = function()
+      		OrionLib:Destroy()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Evade",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Evade Pepe Gui",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/PepesGH1/stuff/main/evadeloader.lua"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Muscle Legends",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Speed Hub X",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/GameList.lua"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Slap battles",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Slap Battles hub that exists",
+	Callback = function()
+	       loadstring(game:HttpGet(("https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Slap%20Battles")))()
+      		
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Giangplay Slap Battles hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "KyKyryzob slap battles hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Slap-Battles-KykyryzoB-Hub-SB-9008"))()
+  	end    
+})
+
